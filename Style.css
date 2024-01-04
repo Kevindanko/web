@@ -9,3 +9,15 @@ body{
 i{
     font-size: 24px;
 }
+.box1{
+    width: 100px;
+    height: 100px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+}
+.box3{
+    width: 225px;
+    height: 100px;
+}
