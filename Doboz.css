@@ -1,7 +1,18 @@
+footer{
+    background-color: aqua;
+
+}
+body{
+    background-color: rgb(36, 219, 143);
+    margin: justify;
+}
+i{
+    font-size: 24px;
+}
+
 .box1
 .box2
-.box3{
-    margin: 10px;   
+.box3{ 
 }
 .box1{
     width: 100px;
@@ -11,6 +22,7 @@
     float: left;
     max-width: 100px;
     max-height: 100px;
+    margin:  10px; 
 }
 .box2{
     width: 100px;
@@ -20,13 +32,15 @@
     float: left;
     max-width: 100px;
     max-height: 100px;
+    margin:  10px; 
 }
 .box3{
-    width: 220px;
+    width: 222px;
     height: 100px;
     border: 1px solid black;
     background-color: blue;
     clear: both;
-    max-width: 220px;
+    max-width: 222px;
     max-height: 100px;
+    margin:  10px;
 }
