@@ -1,19 +1,4 @@
-footer{
-    background-color: aqua;
 
-}
-body{
-    background-color: rgb(36, 219, 143);
-    margin: justify;
-}
-i{
-    font-size: 24px;
-}
-
-.box1
-.box2
-.box3{ 
-}
 .box1{
     width: 100px;
     height: 100px;
@@ -23,6 +8,7 @@ i{
     max-width: 100px;
     max-height: 100px;
     margin:  10px; 
+    clear: both;
 }
 .box2{
     width: 100px;
@@ -32,7 +18,8 @@ i{
     float: left;
     max-width: 100px;
     max-height: 100px;
-    margin:  10px; 
+    margin:  10px;
+
 }
 .box3{
     width: 222px;

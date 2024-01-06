@@ -1,11 +1,39 @@
 footer{
-    background-color: aqua;
-
+    background-color: rgb(51, 51, 51);
+    width: 100;
+    color: white;
 }
+.footer i{
+    font-size: 30px;
+}
+
 body{
     background-color: rgb(36, 219, 143);
-    margin: justify;
+}
+
+nav{
+    background-color: rgb(51, 51, 51);
+    font-weight: bold;
+    height: 45px;
+}
+
+.navbar ul{
+    float: left;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+}
+.navbar a:hover{
+    background: rgb(36, 36, 36);
+}
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
 }
 i{
-    font-size: 24px;
+    color: white;
 }
