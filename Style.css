@@ -44,9 +44,4 @@ video{
     height: 400px;
     border: 2px black solid;
 }
-video::-webkit-media-controls-volume-slider{
-    display: none;
-}
-video::-webkit-media-controls-mute-button{
-    display: flexbox;
-}
+
