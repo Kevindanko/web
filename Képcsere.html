@@ -7,15 +7,38 @@
     <title>Képcsere</title>
 
     <style>
-        img{
-            width: 250px;
-            height: 220px;
-            object-fit: cover;
-            display: none;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        #normal{
-            display: none;
+        body{
+
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+            margin: 15px;
         }
+        .container{
+            width: 400px;
+            height: 250px;
+            margin-top: 50px;
+            position: relative;
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+        }
+        .top-img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all 0.7 ease;
+               }
+         .top-img:hover{
+            opacity: 1;
+         }      
     </style>
 </head>
 <body>
@@ -23,24 +46,13 @@
     <h1>
         Ezek nem csak a vasat lopják
     </h1>
-    
-    <img src="letöltés.png" alt="normal" id="normal">
-    <img src="Flag_of_Romania.svg.png" alt="pissed" id="pissed">
     <br>
-    <input type="button" value="normal" onclick="normal()">
-    <input type="button" value="pissed" onclick="pissed()">
+    <div class="container">
+        <img src="Image2.png" alt="">
+        <img class="top-img" src="Image1.png" alt="">
+    </div>
 
-    <script>
-        function normal() {
-            document.getElementById("normal").style.display = "block";
-            document.getElementById("normal").style.display = "none";
 
-        }
-        function pissed() {
-            document.getElementById("pissed").style.display = "block";
-            document.getElementById("pissed").style.display = "none";
 
-        }
-    </script>
 </body>
 </html>
