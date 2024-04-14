@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álomkonyha Étterem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Étterem.css">
+
+</head>
+<body>
+
+<div id="section1">
+    <header class="py-3">
+        <h1>
+            Álomkonyha Étterem
+        </h1>
+        <h2>
+            Ízek és álmok találkozása - ahol minden fogás egy kaland.
+        </h2>
+    </header>
+</div>
+
+<nav class="navbar navbar-expand-sm">
+
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Főoldal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Étlap</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Kapcsolat</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="mt-3 container">
+    <img src="Étterem_stock.jpg" id="kép" class="img-fluid">
+</div>
+
+<div class="text-center text-bg-dark mt-2 py-2 container" id="udvozlo">
+
+    <h4>
+        Üdvözöljük az "Álomkonyha Étteremben"!
+    </h4>
+    <p>
+         Itt az ízek és álmok találkoznak, hogy felejthetetlen élményeket nyújtsanak Önnek. Fedezze fel kifinomult, kreatív fogásainkat, melyek friss, helyi alapanyagokból készülnek, és élvezze az egyedi hangulatot, mely minden étkezésünket kíséri. Legyen része az "Álomkonyha" varázsában!
+    </p>
+</div>
+
+<div id="section2" class="text-center row my-2">
+    <h2>
+        Étlap
+    </h2>
+
+    <div class="col-md-4 col-sm-6 my-3 bg">
+        <div class="card bg-success">
+            <h4 class="text-center">Varázslatos Kerti Saláta</h4>
+            <img src="lead_Social_cobb-salata-recept.jpg" alt="" class="ételek img-fluid">
+            <p>Friss zöldségek, kecskesajt, pirított dió és házi gyümölcsös vinaigrette összeállítása, mely az ízek és textúrák harmóniáját kínálja.</p>
+            <p>Ár:$6</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 my-3">
+        <div class="card bg-warning">
+            <h4 class="text-center">Csodás Csirkemell</h4>
+            <img src="Mentas-citromos-csirkemell.jpg" alt="" class="ételek img-fluid">
+            <p>Csirkemell, sült zöldségekkel és citromos kuskusztállal, mely egy igazi kulináris utazásra invitálja vendégeinket.</p>
+            <p>Ár:$9</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 my-3">
+        <div class="card bg-primary">
+            <h4 class="text-center">Mesebeli Tengeri Herkentyű Ragú</h4>
+            <img src="45208_bigfish_lanchid_restaurant_bar.jpg" alt="" class="ételek img-fluid">
+            <p>Tengeri herkentyűk friss paradicsomos ragúban, friss tésztaágyon, melyet a tenger sós levelei ihlettek.</p>
+            <p>Ár:$12</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 my-3">
+        <div class="card bg-secondary">
+            <h4 class="text-center">Bűvös Csokoládé Szelet</h4>
+            <img src="Bounty-szelet-sutes-nelkul-jpg.webp" alt="" class="ételek img-fluid">
+            <p>Gazdag, selymes csokoládé szelet.</p>
+            <p>Ár:$5</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 my-3">
+        <div class="card  bg-info">
+            <h4 class="text-center">Csoda Víz</h4>
+            <img src="Petalosa-768x768.jpg" alt="" class="ételek img-fluid">
+            <p>Víz egy mesebeli patakból</p>
+            <p>Ár:$2</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 my-3">
+        <div class="card bg-danger">
+            <h4 class="text-center">Varázslatos Szomjoltó Koktél</h4>
+            <img src="koktelnyito.jpg" alt="" class="ételek img-fluid">
+            <p>Gyümölcsös és frissítő koktél.</p>
+            <p>Ár:$7</p>
+        </div>
+    </div>
+</div>
+
+<div id="section3" class="text-center my-3">
+    <h2>
+        Kapcsolat
+    </h2>
+
+    <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Név:</label>
+            <input type="name" class="form-control" id="name" placeholder="írja be a nevét" name="name">
+          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Írja be az email címét" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="comment">Üzenet:</label>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Írja le véleményét" name="text"></textarea>
+        </div> 
+        <button type="submit" class="btn btn-primary">Küldés</button>
+      </form> 
+</div>
+
+<footer class="mt-2">
+    <H2>
+        Köszönjük hogy minket választott!
+    </H2>
+    <h4>Elérhetőségek:</h4>
+    <p>Tel: 06 00 000 0000</p>
+    <p>Email: Alomkonyha@gmail.com</p>
+</footer>
+
+
+</body>
+</html>

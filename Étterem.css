@@ -1,0 +1,60 @@
+header{
+    background-color: grey;
+    text-align: center;
+}
+nav{
+    background-color: rgb(51, 51, 51);
+    font-weight: bold;
+    height: 45px;
+}
+
+.navbar ul{
+    float: left;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+}
+.navbar a:hover{
+    background: rgb(36, 36, 36);
+}
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+}
+i{
+    color: white;
+}
+#kép{
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    max-height: 800px;
+    max-width: 100%;
+    height: auto;
+
+}
+#udvozlo{
+    width: 650px;
+}
+footer{
+    background-color: grey;
+    text-align: center;
+}
+.ételek{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+}
+#section2{
+    font-weight: bold;
+}
+.card{
+    height: 100%;
+}
