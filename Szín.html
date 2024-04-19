@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Színezd újra</title>
+</head>
+<body>
+    <div>
+        <h1>Színváltó weboldal</h1>
+        <input type="color" id="backgroundColorPicker" value="#f0f0f0">
+        <input type="color" id="textColorPicker" value="#333">
+        <button onclick="changeColor()">Színváltás</button>
+    </div>
+
+    <script>
+        function changeColor() {
+            var backgroundColor = document.getElementById("backgroundColorPicker").value;
+            var textColor = document.getElementById("textColorPicker").value;
+            
+            document.body.style.backgroundColor = backgroundColor;
+            document.body.style.color = textColor;
+
+            var textColor = getContrastYIQ(randomColor);
+            document.body.style.color = textColor;
+        }
+    </script>
+</body>
+</html>
