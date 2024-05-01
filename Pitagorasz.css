@@ -4,13 +4,29 @@
     font-style: normal;
   }
   img{
-      width: 50%;
-      height: 50%;
+      display: block;
+      margin-top: 75px;
+      width: 100%;
+      height: 100%;
   }
   p{
-      font-size: larger;
+      font-size: 32px;
+      font-weight: bolder;
+
   }
   fieldset{
       width: 300px;
       float: right;
+      margin: 50px;
+
+  }
+  #c{
+    background-color: lightgray;
+  }
+  body{
+    width: 1280px;
+    margin: auto;
+  }
+  #eredmeny{
+      font-size: 20px;
   }

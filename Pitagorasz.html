@@ -4,35 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pitagorasz-tétel</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="Pitagorasz.css"> 
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Smythe&display=swap');
-    </style>
+</style>
 </head>
 <body>
 
-<h1 class="smythe-regular">Pitagorasz-tétel kalkulátor</h1>
+<div class="container">
+    <h1 class="smythe-regular">Pitagorasz-tétel kalkulátor</h1>
 
-<img src="Pitagorasz tétel_sm.webp" alt="">
-<fieldset>
-<div>
-  <label for="a">A oldal hossza:</label>
-  <input type="number" id="a" name="a">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="Pitagorasz tétel_sm.webp" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <fieldset>
+                <div class="form-group">
+                    <label for="a">A oldal hossza:</label>
+                    <input type="number" class="form-control" id="a" name="a">
+                </div>
+
+                <div class="form-group">
+                    <label for="b">B oldal hossza:</label>
+                    <input type="number" class="form-control" id="b" name="b">
+                </div>
+
+                <div class="form-group">
+                    <label for="c">C oldal hossza:</label>
+                    <input type="number" class="form-control" id="c" name="c" readonly>
+                </div>
+
+                <button onclick="szamol()" class="btn btn-primary">Számolás</button>
+
+                <p id="eredmeny"></p>
+            </fieldset>
+        </div>
+    </div>
+
+    <p class="smythe-regular">A tétel. Bármely derékszögű háromszög leghosszabb oldalának (átfogójának) négyzete megegyezik a másik két oldal (a befogók) négyzetösszegével. Tehát: ha egy háromszög derékszögű, akkor a leghosszabb oldalára emelt négyzet területe a másik két oldalra emelt négyzetek területének összegével egyenlő.</p>
 </div>
-
-<div>
-  <label for="b">B oldal hossza:</label>
-  <input type="number" id="b" name="b">
-</div>
-
-<button onclick="szamol()">Számolás</button>
-
-<p id="eredmeny"></p>
-
-</fieldset>
-
-<p class="smythe-regular">A tétel. Bármely derékszögű háromszög leghosszabb oldalának (átfogójának) négyzete megegyezik a másik két oldal (a befogók) négyzetösszegével. Tehát: ha egy háromszög derékszögű, akkor a leghosszabb oldalára emelt négyzet területe a másik két oldalra emelt négyzetek területének összegével egyenlő.</p>
 
 <script>
 function szamol() {
@@ -41,8 +54,10 @@ function szamol() {
   
   if (!isNaN(a) && !isNaN(b)) {
     var c = Math.sqrt(a * a + b * b);
-    document.getElementById('eredmeny').innerHTML = 'C oldal hossza: ' + c;
+    document.getElementById('c').value = c.toFixed(2);
+    document.getElementById('eredmeny').innerHTML = 'C oldal hossza: ' + c.toFixed(2);
   } else {
+    document.getElementById('c').value = '';
     document.getElementById('eredmeny').innerHTML = 'Kérem adja meg az A és B oldal hosszát!';
   }
 }
