@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up</title>
+
+    <style>
+        input{
+            margin: 5px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <form action="data">
+        <fieldset>
+            <legend>Az adataid amiket nem lopunk el</legend>
+                <input type="email" name="data" id="email" placeholder="Email cím"><br>
+                <input type="password" name="data" id="data" placeholder="Jelszó"><br>
+                <input type="checkbox" name="data" id="aszf" checked>
+                <label for=""><a href="ÁSZF.html">ÁSZF</a></label><br>
+            <input type="checkbox" name="" id="" checked>
+            <label for="">Feliratkozom a hírlevélre</label><br>
+
+            <input type="button" value="OK">
+
+        </fieldset>
+    </form>
+
+    <script>
+
+    function feliratkozas(){
+    if(aszf.checked){
+        localStorage.setItem('email', id.value);
+
+        console.log(localStorage.getItem('email'));
+    }
+    else{
+        alert("fogaddel")}
+    }
+
+    </script>
+    
+</body>
+</html>
