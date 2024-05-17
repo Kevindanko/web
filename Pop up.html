@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop-up</title>
+    <title>Hírlevél</title>
 
     <style>
-        input{
+        fieldset {
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 30vh;
+        }
+
+        input {
             margin: 5px;
         }
     </style>
 
 
 </head>
+
 <body>
 
-    <form action="data">
+    <form action="javascript:feliratkozas()">
         <fieldset>
-            <legend>Az adataid amiket nem lopunk el</legend>
-                <input type="email" name="data" id="email" placeholder="Email cím"><br>
-                <input type="password" name="data" id="data" placeholder="Jelszó"><br>
-                <input type="checkbox" name="data" id="aszf" checked>
-                <label for=""><a href="ÁSZF.html">ÁSZF</a></label><br>
-            <input type="checkbox" name="" id="" checked>
+            <legend>Az adataid amiket nem lopunk el :)</legend>
+            <input type="email" name="data" id="email_input" placeholder="Email cím" required><br>
+            <input type="text" name="data" id="nev_input" placeholder="neved" required><br>
+            <input type="checkbox" name="data" id="aszf" checked>
+            <label for=""><a href="ÁSZF.html">ÁSZF</a></label><br>
+            <input type="checkbox" name="data" id="hir">
             <label for="">Feliratkozom a hírlevélre</label><br>
 
-            <input type="button" value="OK">
+            <input type="submit" value="OK">
 
         </fieldset>
     </form>
 
     <script>
 
-    function feliratkozas(){
-    if(aszf.checked){
-        localStorage.setItem('email', id.value);
+        function feliratkozas() {
+            if (aszf.checked) {
+                localStorage.setItem('email', email_input.value);
+                localStorage.setItem('name', nev_input.value);
 
-        console.log(localStorage.getItem('email'));
-    }
-    else{
-        alert("fogaddel")}
-    }
+                if (hir.checked) {
+                    localStorage.setItem('hírlevél', "igen")
+                    alert("Sikeresen feliratkozotál a hírlevelünkre, köszönjük!")
+                }
+                else {
+                    localStorage.setItem('hírlevél', "nem")
+                }
+            }
+            else {
+                alert("fogadd el")
+            }
+        }
 
     </script>
-    
+
 </body>
+
 </html>
